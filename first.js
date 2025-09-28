@@ -6,3 +6,5 @@ const product = {
 };
 
 console.log(product);
+console.log(typeof product["Price"]);
+console.log(typeof product.fullName);
