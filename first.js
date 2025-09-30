@@ -1,8 +1,16 @@
-// Q1. Print All Even Numbers From 0 to 100
+let gameNum = 25;
+let num;
 
-console.log("| Even Numbers From 0 to 100 |");
-for (let num =0; num <=100; num ++){
-    if(num%2==0){
-        console.log(num);
+do {
+    num = Number(prompt("Guess a number between 0 and 100:"));
+
+    if (num < gameNum) {
+        alert("Too low! Try again.");
+    } else if (num > gameNum) {
+        alert("Too high! Try again.");
     }
-}
+
+} while (num !== gameNum);
+
+alert("Correct!");
+console.log("Correct!");
